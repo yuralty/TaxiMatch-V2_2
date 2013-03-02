@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/editTextIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="76dp"
+        android:ems="10" 
+        android:text="59.78.28.166">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextIP"
+        android:layout_below="@+id/editTextIP"
+        android:layout_marginTop="27dp"
+        android:ems="10" 
+        android:text="5679"/>
+
+    <LinearLayout 
+        android:id="@+id/btLayout1"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/editTextPort"
+        android:layout_marginTop="50dp"
+        >
+        
+        <Button
+        android:id="@+id/bpConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:text="passenger" />
+        
+        <Button
+        android:id="@+id/bdConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:text="driver" />
+        
+        
+        
+        </LinearLayout>
+        
+    <LinearLayout 
+        android:id="@+id/btLayout2"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btLayout1"
+        android:layout_marginTop="20dp"
+        >
+        
+        <Button
+        android:id="@+id/bDisconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:text="disconnect" />
+        
+        <Button
+        android:id="@+id/bsExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:text="exit" />
+        
+        </LinearLayout>
+      
+    
+
+    
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextIP"
+        android:layout_alignBottom="@+id/editTextIP"
+        android:layout_alignParentLeft="true"
+        android:text="Host IP"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextPort"
+        android:layout_alignBottom="@+id/editTextPort"
+        android:layout_alignParentLeft="true"
+        android:text="Port"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
